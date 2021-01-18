@@ -61,6 +61,7 @@ RUN set -ex \
     && pip install thrift \
     && pip install thrift-sasl \
     && pip install PyHive \
+    && pip install elasticsearch \
     && pip install apache-airflow[crypto,celery,postgres,hive,jdbc,mysql,ssh${AIRFLOW_DEPS:+,}${AIRFLOW_DEPS}]==${AIRFLOW_VERSION} \
     && pip install 'redis==3.2' \
     && pip install apache-airflow-backport-providers-elasticsearch \
